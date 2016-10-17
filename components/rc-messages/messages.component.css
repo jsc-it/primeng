@@ -1,0 +1,168 @@
+.rc-message {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	margin: 10px 0;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 1em;
+	background: #ececec
+}
+
+.rc-message-text {
+	flex-grow: 1;
+	display: inline;
+	padding: 3px 10px;
+	font-size: 1em
+}
+
+.rc-message-detail {
+	display: inline;
+	margin-left: 5px;
+	padding-top: 3px;
+	color: #333
+}
+
+.rc-message-detail::after {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.2em;
+	content: "\f00e"
+}
+
+.rc-message-info-icon {
+	color: #999
+}
+
+.rc-message-info-icon::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.8em;
+	content: "\f05a"
+}
+
+.rc-message-warn-icon {
+	color: #feaa03
+}
+
+.rc-message-warn-icon::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.8em;
+	content: "\f071"
+}
+
+.rc-message-error-icon {
+	color: #9f0002
+}
+
+.rc-message-error-icon::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.8em;
+	content: "\f071"
+}
+
+.rc-message-error {
+	color: #9f0002
+}
+
+.rc-message-aggregated-text {
+	padding-bottom: 10px;
+	color: #9f0002;
+	font-size: 16px
+}
+
+.rc-message-aggregated-text::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f071";
+	padding-right: 5px
+}
+
+.rc-message-causes {
+	display: flex;
+	flex-direction: column
+}
+
+.rc-message-cause-body {
+	flex-grow: 1;
+	max-height: 70vh;
+	overflow: auto
+}
+
+.rc-message-cause-body>.rc-message {
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: inherit
+}
+
+.rc-message-cause {
+	display: block;
+	margin-bottom: 10px
+}
+
+.rc-message-cause-cause {
+	font-weight: bold
+}
+
+.rc-message-cause-remidation {
+	padding-bottom: 10px
+}
+
+.rc-message-cause-detail {
+	margin-left: 20px;
+	width: 100%;
+	padding-right: 7px
+}
+
+.rc-message-cause-value {
+	width: 100%;
+	word-break: break-all;
+	display: block
+}
+
+.rc-message-cause-label {
+	vertical-align: top
+}
+
+.rc-message-cause-description {
+	margin-top: 20px;
+	border-top: 1px solid #bcbcbc;
+	font-size: 16px
+}
+
+.rc-message-cause-description-label {
+	margin: 10px 0
+}
+
+.rc-message-cause-description-textarea {
+	height: 5em
+}
+
+.rc-message-cause-button-bar {
+	text-align: right;
+	padding: 10px 20px
+}
