@@ -9,6 +9,10 @@
                     <img alt="logo" src="showcase/resources/images/menuicon.svg"/>
                 </a>
             </span>
+            <span id="menu_rc" #menurctitle class="MenuSideMainLink bordersOfMenuSide" [class.MenuSideMainLinkDark]="menurctitle.id == activeMenuId" (click)="activeMenuId = menurctitle.id"><img src="showcase/resources/images/mono/input.svg" /><img class="hiddenIcons" src="showcase/resources/images/mono/inputBlue.svg" /><span class="MainLinkText">RC Components</span></span>
+            <div class="SubMenuLinkContainer" [ngClass]="{submenushow: (menurctitle.id == activeMenuId), 'submenuhide': (menurctitle.id != activeMenuId)}">
+                <a class="SubMenuLink" [routerLink]="['/rc-messages']" (click)="mobileMenuActive = false">&#9679; rc-messages</a>
+            </div>
 
             <span id="menu_input" #inputmenutitle class="MenuSideMainLink bordersOfMenuSide" [class.MenuSideMainLinkDark]="inputmenutitle.id == activeMenuId" (click)="activeMenuId = inputmenutitle.id"><img src="showcase/resources/images/mono/input.svg" /><img class="hiddenIcons" src="showcase/resources/images/mono/inputBlue.svg" /><span class="MainLinkText">Input</span></span>
             <div class="SubMenuLinkContainer" [ngClass]="{submenushow: (inputmenutitle.id == activeMenuId), 'submenuhide': (inputmenutitle.id != activeMenuId)}">

@@ -96,6 +96,10 @@ import {InputMaskDemo} from "./demo/inputmask/inputmaskdemo";
 import {FileUploadDemo} from './demo/fileupload/fileuploaddemo';
 import {TriStateCheckboxDemo} from './demo/tristatecheckbox/tristatecheckboxdemo';
 
+// RC components
+import { RcMessagesDemo } from './demo/rc-messages/rc-messagesdemo';
+
+
 export const routes: Routes = [
     {path: '', component: HomePageComponent},
     {path: 'setup', component: SetupComponent},
@@ -191,7 +195,10 @@ export const routes: Routes = [
     {path: 'menumodel', component: MenuModelApi},
     {path: 'mask', component: InputMaskDemo},
     {path: 'fileupload', component: FileUploadDemo},
-    {path: 'tristatecheckbox', component: TriStateCheckboxDemo}
+    {path: 'tristatecheckbox', component: TriStateCheckboxDemo},
+
+    // RC components
+    {path: 'rc-messages', component: RcMessagesDemo},
 ];
 
 
